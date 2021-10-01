@@ -1,0 +1,67 @@
+﻿@inherits GodswillEduRecord.Layouts.MainLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using GodswillEduRecord.Models.ConData
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center">
+      <div class="col-6 d-flex align-items-center">
+        <RadzenSidebarToggle Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="GodswillEduRecord">
+        </RadzenLabel>
+      </div>
+      <div class="col-6 text-right">
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenContentContainer Name="main">
+    @Body
+    </RadzenContentContainer>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Text="Genders" Path="genders">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Next Of Kins" Path="next-of-kins">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Qualifications" Path="qualifications">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Relationships" Path="relationships">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="School Courses" Path="school-courses">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="States" Path="states">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Student Biodata" Path="student-biodata">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Student Course Payments" Path="student-course-payments">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Student Course Registrations" Path="student-course-registrations">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Student Education Histories" Path="student-education-histories">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Text="Study Sessions" Path="study-sessions">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter>
+  <ChildContent>
+    <RadzenLabel Text="GodswillEduRecord, Copyright Ⓒ 2021">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>
